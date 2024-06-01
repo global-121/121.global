@@ -4,5 +4,10 @@
 
 <script>
   var loc = window.location;
+
+  if (['manual', 'help'].includes(loc.pathname) {
+    loc.href = 'https://manual.121.global';
+  }
+
   loc.href = "https://510.global/product/121-platform/?source=121.global" + loc.pathname + loc.search + loc.hash;
 </script>
